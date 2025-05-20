@@ -21,6 +21,10 @@ Trong trường hợp chưa có phần mềm yêu cầu, vui lòng tham khảo t
 - Tại góc phải màn hình, chọn `Select Kernel`. Một danh sách hiện ra, chọn `.venv (Python 3.x.y)` mà bạn đã tạo trước đó. Nếu nút `Select Kernel: ...` chuyển sang `.venv (Python 3.x.y)` tức là đã thành công.
 - Cuối cùng, bạn cần cài đặt các thư viện cần thiết để code Python bên trong Jupyter notebook này có thể chạy được. Trên thanh công cụ, chọn `Terminal -> New Terminal`. Một giao diện dòng lệnh sẽ hiện ra ở bên dưới màn hình. Nhập và chạy lệnh sau:
 ```zsh
-pip install ipykernel numpy pandas matplotlib yfinance
+pip install ipykernel numpy pandas matplotlib yfinance scikit-learn
+```
+!!! Chú ý: trong phiên bản cũ của README.md lệnh trên đã bị sót mất thư viện scikit-learn. Những ai dã thực hiện theo hướng dẫn cũ vui lòng chạy thêm lệnh sau:
+```
+pip install scikit-learn
 ```
 - Nếu lệnh không thông báo lỗi gì, tức là bạn đã thiết lập thành công môi trường Python cho Jupyter notebook. Giờ bạn có thể chỉnh tham số trong Jupyter notebook theo ý muốn (ví dụ, mã chứng khoán cần dự đoán) và chạy theo hướng dẫn đã được ghi kèm theo trong notebook.
