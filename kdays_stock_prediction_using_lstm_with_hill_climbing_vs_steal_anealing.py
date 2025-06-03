@@ -188,7 +188,7 @@ def fitness(ind):
 
 # 2. Hàm hill_climb_annealing (HC + SA)
 
-def hill_climb_annealing(max_iterations=100,T_init=1.0,alpha=0.95,min_temperature=1e-3,target_mse=None,random_seed=None):
+def hill_climb_annealing(max_iterations=100,T_init=1.0,alpha=0.95,min_temperature=1e-3,target_mse=0.001,random_seed=None):
     """
     Tìm best_hyperparams bằng Hill Climbing + Simulated Annealing.
     Args:
